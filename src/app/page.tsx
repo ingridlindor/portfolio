@@ -1,27 +1,26 @@
-import Button from "@/src/components/atoms/Button"
-import  Badge  from "@/src/components/atoms/Badge"
-import StatusBadge from "@/src/components/atoms/StatusBadge"
-import ProjectCard from "../components/molecules/ProjectCard"
+
+import StatusBadge from "@/src/components/atoms/StatusBadge/StatusBadge"
+import Button from "../components/atoms/button/button"
+import Tag from "../components/atoms/Tag/Tag"
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen p-10 flex gap-4 ">
+    <main className="min-h-screen p-10 flex gap- flex-col justify-center items-start">
+
+      <div className=" p-10 gap 2  flex-col justify-center items-start" >
+        <h1 className="text-4xl font-bold text-white" >Atoms</h1>
+        <StatusBadge available={true} /> 
+        <Button href="#work" >▶ See my work</Button>
+        <Button  href="#contact" variant="secondary" >✉ Contact me</Button>
+        <Tag label="Full-stack developer" />
+      </div>
      
-      <Button variant="primary" href="#work">▶ See my work</Button>
-     
-      <Button variant="secondary">Read more</Button>
+      <div className="p-10 gap 2  flex-col justify-center items-start"> 
+        <h1 className="text-4xl font-bold text-white">Molecules</h1>
 
-      <Badge label="TS" />
-      <Badge label="Postgres" />
-
-      <StatusBadge available={true} />
-
-      <ProjectCard label="// Project_01">
-       teste
-      </ProjectCard>
+      </div>
 
 
-      
     
     </main>
   )

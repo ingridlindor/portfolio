@@ -1,5 +1,5 @@
 'use client'
-import {Card  as ShadcnCard } from "@/components/ui/card"
+import {Card  as ShadcnCard } from "@/src/components/atoms/card"
 interface ButProjectCardProps{
   label: string
 }
