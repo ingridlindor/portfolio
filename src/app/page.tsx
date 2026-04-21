@@ -5,11 +5,15 @@ import Tag from "../components/atoms/Tag/Tag"
 import ProjectCard from "../components/molecules/ProjectCard/ProjectCard"
 import NavLink from "../components/molecules/NavLink/NavLink"
 import StackItem from "../components/molecules/StackItem/StackItem"
+import Nav from "../components/organisms/Nav/Nav"
 
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen p-10 flex gap- flex-col justify-center items-start">
+    <main className="min-h-screen p-10 flex  flex-col justify-center items-start">
+        <div className="w-full" > 
+        <Nav  />   
+        </div>
 
       <div className=" p-10 gap 2  flex-col justify-center items-start" >
         <h1 className="text-4xl font-bold text-white" >Atoms</h1>
@@ -48,7 +52,9 @@ export default function HomePage() {
          <NavLink  label="[Stack]" href="#" hover="hover:text-black hover:bg-[var(--yellow)]"> </NavLink>
          <NavLink  label="[Contact]" href="#" hover="hover:text-black hover:bg-[var(--yellow)]"> </NavLink>
      </div>
-      
+
+        
+
     </main>
   )
 }
